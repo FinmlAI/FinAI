@@ -5,3 +5,4 @@ joblib
 lightgbm
 lifelines
 scikit-learn
+gunicorn
