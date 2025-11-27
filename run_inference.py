@@ -1,7 +1,7 @@
 import json
 import pandas as pd
 import joblib
-from run_predictions import predict_single, expand_prediction, generate_statement
+from FinAI.test import predict_single, expand_prediction, generate_statement
 
 # Load trained models
 cox_model = joblib.load("cox_model.pkl")

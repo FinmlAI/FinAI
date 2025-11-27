@@ -2,7 +2,8 @@ import pandas as pd
 import json
 
 # Load Excel file
-df = pd.read_excel("Synthetic Data.xlsx")
+# df = pd.read_excel("Synthetic Data.xlsx")
+df = pd.read_excel("FinAI\synthetic_credit_data (2).csv")
 
 # Function to transform one row into nested JSON
 def row_to_json(row):
@@ -87,5 +88,5 @@ def row_to_json(row):
 json_data = [row_to_json(row) for _, row in df.iterrows()]
 
 # Save to JSON file
-with open("input.json", "w") as f:
+with open("input1.json", "w") as f:
     json.dump(json_data, f, indent=4)
